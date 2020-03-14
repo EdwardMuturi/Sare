@@ -23,6 +23,14 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
 }
 
 dependencies {
@@ -32,6 +40,9 @@ dependencies {
     implementation Deps.appcompat
     implementation Deps.kotlin_core_extensions
     implementation Deps.constraint_layout
+//    material
+    implementation Deps.material
+//    Testing
     testImplementation Deps.junit
     androidTestImplementation Deps.junit_ext
     androidTestImplementation Deps.espresso
