@@ -13,7 +13,7 @@ object Versions {
     val material_dialogue_versions= "3.1.1"
     val cardview_version= "1.0.0"
     val dashed_text_version= "0.1.2"
-    val constraint_version = "2.0.0-beta2"
+    val constraint_version = "2.0.0-beta4"
     val junit_version = "4.12"
     val junit_ext = "1.1.1"
     val espresso_core = "3.2.0"

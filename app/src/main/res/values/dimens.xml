@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text">34sp</dimen>
+    <dimen name="summary_text">34sp</dimen>
+    <dimen name="header_text_2">24sp</dimen>
+    <dimen name="body_text">16sp</dimen>
+    <dimen name="sub_body_text">14sp</dimen>
+    <dimen name="button_text">14sp</dimen>
+    <dimen name="caption">12sp</dimen>
+    <dimen name="Sare_small_component_corner_radius">24dp</dimen>
+    <dimen name="Sare_medium_component_corner_radius">0dp</dimen>
+    <dimen name="Sare_large_component_corner_radius">12dp</dimen>
+</resources>
