@@ -15,9 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        bottom_container.setOnClickListener {
+
         BottomSheetBehavior.from(bottom_container).state = BottomSheetBehavior.STATE_COLLAPSED
         supportFragmentManager.beginTransaction().replace(
             R.id.bottom_container, ExpensesFragment()
         ).commit()
+
+        }
     }
 }

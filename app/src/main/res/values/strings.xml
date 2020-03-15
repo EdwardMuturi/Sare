@@ -7,4 +7,7 @@
     <string name="sample_amount">Kes 2,000</string>
     <string name="text_weekly">Weekly</string>
     <string name="text_monthly">Monthly</string>
+    <string name="navigation_expenses">Expenses</string>
+    <string name="bottom_app_bar_logo_content_desc">View or add expenses</string>
+    <string name="text_settings">Settings</string>
 </resources>

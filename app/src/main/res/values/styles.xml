@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="SareTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="SareTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
@@ -10,6 +10,9 @@
 
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorOnPrimary">@color/primaryTextColor</item>
+
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
 
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sare.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Sare.MediumComponent</item>
