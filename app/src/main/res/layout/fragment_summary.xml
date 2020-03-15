@@ -97,6 +97,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mtv_summary_monthly_label"
                 android:layout_marginTop="16dp"
+                android:text="@string/text_monthly"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

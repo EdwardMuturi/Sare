@@ -4,6 +4,7 @@ object Versions {
     val koltin_core_version = "1.0.2"
     const val androidx_activity_version = "1.1.0-rc02"
     const val androidx_fragment_version = "1.2.0-rc02"
+    const val nav_version= "2.3.0-alpha01"
     val gradle_plugin = "3.6.1"
     val google_services = "4.3.2"
     val fire_auth = "19.1.0"
@@ -107,5 +108,9 @@ object Deps {
     val timber= "com.jakewharton.timber:timber:${Versions.timber_version}"
     //Lottie
     val lottie= "com.airbnb.android:lottie:${Versions.lottie_version}"
+    //    navigation component
+    const val nav_UI= "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
+    const val nav_fragment= "androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
+    const val safe_args_gradle_plugin= "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
 
 }
