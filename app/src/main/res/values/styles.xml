@@ -11,9 +11,6 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorOnPrimary">@color/primaryTextColor</item>
 
-        <item name="fontFamily">@font/roboto_condensed_regular</item>
-        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
-
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sare.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Sare.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Sare.LargeComponent</item>
@@ -24,6 +21,8 @@
         <item name="textAppearanceBody1">@style/TextAppearance.Sare.Body1</item>
         <item name="textAppearanceBody2">@style/TextAppearance.Sare.Body2</item>
         <item name="textAppearanceButton">@style/TextAppearance.Sare.Button</item>
+<!--        styles-->
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
 
     </style>
 

@@ -11,12 +11,12 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/summary_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph= "@navigation/nav_graph"
         app:defaultNavHost= "true"
-        android:layout_gravity="center"/>
+        android:layout_gravity="top"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
     
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:layout_gravity="bottom"
         android:id="@+id/bottom_app_bar"
         app:fabAlignmentMode="center"
@@ -54,7 +54,7 @@
                 android:id="@+id/bottom_app_bar_logo"
                 android:layout_width="@dimen/bottom_app_bar_logo_size"
                 android:layout_height="@dimen/bottom_app_bar_logo_size"
-                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
                 android:contentDescription="@string/bottom_app_bar_logo_content_desc"
                 android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/ic_view_list_black_24dp" />

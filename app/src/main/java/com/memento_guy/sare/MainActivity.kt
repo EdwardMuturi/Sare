@@ -2,6 +2,7 @@ package com.memento_guy.sare
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -15,13 +16,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        configBottomAppBar()
+
         bottom_container.setOnClickListener {
+            BottomSheetBehavior.from(bottom_container).state = BottomSheetBehavior.STATE_HALF_EXPANDED
+            supportFragmentManager.beginTransaction().replace(
+                R.id.bottom_container, ExpensesFragment()
+            ).commit()
 
-        BottomSheetBehavior.from(bottom_container).state = BottomSheetBehavior.STATE_COLLAPSED
-        supportFragmentManager.beginTransaction().replace(
-            R.id.bottom_container, ExpensesFragment()
-        ).commit()
+            Toast.makeText(this, "Expenses coming soon!", Toast.LENGTH_SHORT).show()
 
+        }
+    }
+
+    private fun configBottomAppBar(){
+        bottom_app_bar.replaceMenu(R.menu.bottom_app_menu)
+        bottom_app_bar.setOnMenuItemClickListener { item ->
+            when(item.itemId){
+                R.id.menu_settings -> {
+                    Toast.makeText(this, "Comming Soon!", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
         }
     }
 }
