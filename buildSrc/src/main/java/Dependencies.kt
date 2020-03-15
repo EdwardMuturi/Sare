@@ -2,6 +2,9 @@ object Versions {
     val event_bus_version= "3.1.1"
     val kotlin = "1.3.70"
     val koltin_core_version = "1.0.2"
+    const val androidx_activity_version = "1.1.0-rc02"
+    const val androidx_fragment_version = "1.2.0-rc02"
+    const val nav_version= "2.3.0-alpha01"
     val gradle_plugin = "3.6.1"
     val google_services = "4.3.2"
     val fire_auth = "19.1.0"
@@ -9,11 +12,11 @@ object Versions {
     val viewmodelscope_version= "2.2.0-alpha04"
     val room_version = "2.1.0"
     val ccp_version = "2.4.1"
-    val material_version = "1.2.0-alpha01"
+    val material_version = "1.2.0-alpha05"
     val material_dialogue_versions= "3.1.1"
     val cardview_version= "1.0.0"
     val dashed_text_version= "0.1.2"
-    val constraint_version = "1.1.3"
+    val constraint_version = "2.0.0-beta4"
     val junit_version = "4.12"
     val junit_ext = "1.1.1"
     val espresso_core = "3.2.0"
@@ -45,12 +48,17 @@ object Versions {
 }
 
 object Deps {
-    //Kotlin
     val kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     val kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
-    val kotlin_core_extensions = "androidx.core:core-ktx:${Versions.koltin_core_version}"
     val android_gradle_plugin = "com.android.tools.build:gradle:${Versions.gradle_plugin}"
     val google_services_plugin = "com.google.gms:google-services:${Versions.google_services}"
+    //androidx
+    val kotlin_core_extensions = "androidx.core:core-ktx:${Versions.koltin_core_version}"
+    const val androidx_activity =
+        "androidx.activity:activity-ktx:${Versions.androidx_activity_version}"
+    const val androidx_fragment =
+        "androidx.fragment:fragment-ktx:${Versions.androidx_fragment_version}"
+
     val firebase_auth = "com.google.firebase:firebase-auth:${Versions.fire_auth}"
     val viewmodelscope= "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.viewmodelscope_version}"
     val livedata_test_helpers= "androidx.arch.core:core-testing:${Versions.lifecycle_version}"
@@ -100,5 +108,9 @@ object Deps {
     val timber= "com.jakewharton.timber:timber:${Versions.timber_version}"
     //Lottie
     val lottie= "com.airbnb.android:lottie:${Versions.lottie_version}"
+    //    navigation component
+    const val nav_UI= "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
+    const val nav_fragment= "androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
+    const val safe_args_gradle_plugin= "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
 
 }
