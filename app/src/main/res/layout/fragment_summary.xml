@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:gravity="center_vertical"
+    tools:context=".ui.SummaryFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/card_summary_width"
+        android:layout_height="@dimen/card_summary_height"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_summary_daily_label"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/text_daily"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="@string/text_daily"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_summary_daily"
+                android:layout_marginTop="16dp"
+                android:text="@string/sample_amount"
+                app:layout_constraintTop_toBottomOf="@id/mtv_summary_daily_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="Kes 3,000"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/card_summary_width"
+        android:layout_height="@dimen/card_summary_height"
+        android:layout_marginEnd="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_summary_weekly_label"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/text_weekly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="@string/text_weekly"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_weekly_daily"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/mtv_summary_weekly_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/sample_amount"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="@string/sample_amount"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/card_summary_width"
+        android:layout_height="@dimen/card_summary_height">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_summary_monthly_label"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="@string/text_monthly"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mtv_summary_monthly"
+                android:layout_marginTop="16dp"
+                android:text="@string/sample_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtv_summary_monthly_label"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                tools:text="Kes 3,000"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

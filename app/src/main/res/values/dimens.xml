@@ -10,4 +10,7 @@
     <dimen name="Sare_small_component_corner_radius">24dp</dimen>
     <dimen name="Sare_medium_component_corner_radius">0dp</dimen>
     <dimen name="Sare_large_component_corner_radius">12dp</dimen>
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="card_summary_height">130dp</dimen>
+    <dimen name="card_summary_width">125dp</dimen>
 </resources>
