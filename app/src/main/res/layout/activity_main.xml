@@ -11,12 +11,11 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/summary_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph= "@navigation/nav_graph"
-        app:defaultNavHost= "true"
-        android:layout_gravity="top"/>
+        app:defaultNavHost= "true"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -29,8 +28,8 @@
         android:layout_height="match_parent"
         android:id="@+id/bottom_container"
         android:scrollbars="vertical"
+        style="?attr/bottomSheetStyle"
         app:behavior_hideable="false"
-        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
     
     <com.google.android.material.bottomappbar.BottomAppBar
