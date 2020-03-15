@@ -13,4 +13,5 @@
     <dimen name="dimen_0dp">0dp</dimen>
     <dimen name="card_summary_height">130dp</dimen>
     <dimen name="card_summary_width">125dp</dimen>
+    <dimen name="bottom_sheet_peek_height">60dp</dimen>
 </resources>

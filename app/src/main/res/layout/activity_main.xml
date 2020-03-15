@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="@dimen/dimen_0dp"
-        android:layout_height="@dimen/dimen_0dp"
-        android:text="Hello World!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/main_container"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph= "@navigation/nav_graph"
-        app:defaultNavHost= "true" />
+        app:defaultNavHost= "true"
+        android:layout_gravity="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_expense_24dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/bottom_container"
+        android:scrollbars="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

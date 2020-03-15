@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:weightSum="3"
     android:gravity="center_vertical"
-    tools:context=".ui.SummaryFragment">
+    tools:context=".ui.summary.SummaryFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/card_summary_width"
