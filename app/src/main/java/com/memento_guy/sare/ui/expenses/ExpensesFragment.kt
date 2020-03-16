@@ -5,11 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 import com.memento_guy.sare.R
+import com.memento_guy.sare.data.Expense
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_expenses.view.*
 
 /**
  * A simple [Fragment] subclass.
@@ -26,6 +29,36 @@ class ExpensesFragment : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val expenseList = ArrayList<Expense>()
+
+        val expense1= Expense("ArtCafe Coffee","13-Mar-2020",250)
+        expenseList.add(expense1)
+        val expense2= Expense("ArtCafe Coffee","14-Apr-2020",250)
+        expenseList.add(expense2)
+        val expense3= Expense("ArtCafe Coffee","01-Feb-2020",250)
+        expenseList.add(expense3)
+        val expense4= Expense("ArtCafe Coffee","16-Mar-2020",250)
+        expenseList.add(expense4)
+        val expense5= Expense("ArtCafe Coffee","16-Aug-2020",250)
+        expenseList.add(expense5)
+        val expense6= Expense("ArtCafe Coffee","16-Mar-2020",250)
+        expenseList.add(expense6)
+        val expense7= Expense("ArtCafe Coffee","06-Sep-2020",250)
+        expenseList.add(expense7)
+        val expense8= Expense("ArtCafe Coffee","15-Oct-2020",250)
+        expenseList.add(expense8)
+        val expense9= Expense("ArtCafe Coffee","16-Mar-2020",250)
+        expenseList.add(expense9)
+        val expense10= Expense("ArtCafe Coffee","20-Jul-2020",250)
+        expenseList.add(expense10)
+        val expense11= Expense("ArtCafe Coffee","18-Mar-2020",250)
+        expenseList.add(expense11)
+        val expense12= Expense("ArtCafe Coffee","16-Mar-2020",250)
+        expenseList.add(expense12)
+
+        val expenseAdapter = ExpenseAdapter()
+        view.rv_expenses.adapter= expenseAdapter
+        expenseAdapter.submitList(expenseList)
     }
 
 }
