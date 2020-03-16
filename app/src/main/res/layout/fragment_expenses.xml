@@ -4,13 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.expenses.ExpensesFragment">
+    tools:context=".ui.expenses.ExpensesFragment"
+    android:background="@color/cardview_dark_background">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtv_summary_daily"
+        android:text="@string/text_daily"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        tools:text="@string/text_daily"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rv_expenses"
         android:clipToPadding="false"
+        android:layout_marginTop="30dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/layout_expense_row"/>
 

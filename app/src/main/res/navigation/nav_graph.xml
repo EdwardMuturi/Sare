@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/summaryFragment">
+        <fragment
+            android:id="@+id/summaryFragment"
+            android:name="com.memento_guy.sare.ui.summary.SummaryFragment"
+            android:label="fragment_summary"
+            tools:layout="@layout/fragment_summary">
+            <action
+                android:id="@+id/action_summaryFragment_to_expensesFragment"
+                app:destination="@id/expensesFragment" />
+        </fragment>
 
     <fragment
-        android:id="@+id/summaryFragment"
-        android:name="com.memento_guy.sare.ui.summary.SummaryFragment"
-        android:label="fragment_summary"
-        tools:layout="@layout/fragment_summary" >
-        <action
-            android:id="@+id/action_summaryFragment_to_expensesFragment"
-            app:destination="@id/expensesFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/expensesFragment"
-        android:name="com.memento_guy.sare.ui.expenses.ExpensesFragment"
-        android:label="fragment_expenses"
-        tools:layout="@layout/fragment_expenses" />
+            android:id="@+id/expensesFragment"
+            android:name="com.memento_guy.sare.ui.expenses.ExpensesFragment"
+            android:label="fragment_expenses"
+            tools:layout="@layout/fragment_expenses" />
 </navigation>

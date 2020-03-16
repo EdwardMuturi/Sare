@@ -34,7 +34,7 @@ class ExpenseAdapter (): androidx.recyclerview.widget.ListAdapter<Expense, Expen
         fun bind(expense: Expense){
             itemView.mtv_expense_name.text = expense.name
             itemView.mtv_expense_date.text = expense.date
-            itemView.mtv_expense_amount.text = "KES ${expense.amount}"
+            itemView.mtv_expense_amount.text = "KES   ${expense.amount}"
         }
 
     }

@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:id="@+id/main_container"
     tools:context=".MainActivity">
 
@@ -22,7 +21,6 @@
         android:layout_height="match_parent"
         android:id="@+id/bottom_container"
         android:scrollbars="vertical"
-        style="?attr/bottomSheetStyle"
         app:behavior_hideable="false"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
 
@@ -66,7 +64,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="@dimen/dimen_8dp"
                 android:text="@string/navigation_expenses"
-                android:textColor="?attr/colorControlNormal"/>
+                android:textColor="@color/secondaryTextColor"/>
 
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>
