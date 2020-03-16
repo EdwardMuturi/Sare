@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dimen_8dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtv_expense_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mtv_expense_amount"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?attr/textAppearanceBody1"
+        tools:text="Art Cafe" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtv_expense_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mtv_expense_amount"
+        android:textAppearance="?attr/textAppearanceBody2"
+        app:layout_constraintTop_toBottomOf="@id/mtv_expense_name"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="Jun-14-2020"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtv_expense_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mtv_expense_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        android:text="@string/sample_amount"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

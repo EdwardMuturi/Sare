@@ -17,12 +17,6 @@
         app:navGraph= "@navigation/nav_graph"
         app:defaultNavHost= "true"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_add_expense_24dp"
-        app:layout_anchor="@id/bottom_app_bar"/>
-
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +25,13 @@
         style="?attr/bottomSheetStyle"
         app:behavior_hideable="false"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
-    
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_expense_24dp"
+        app:layout_anchor="@id/bottom_app_bar"/>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -70,7 +70,5 @@
 
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
