@@ -63,8 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="@dimen/dimen_8dp"
-                android:text="@string/navigation_expenses"
-                android:textColor="@color/secondaryTextColor"/>
+                android:text="@string/navigation_expenses"/>
 
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    Typography-->
+    <style name="TextAppearance.Sare.Headline4" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textColor">@color/sare_light_blue_800</item>
+    </style>
+
+
+    <style name="TextAppearance.Sare.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/eczar_semibold</item>
+        <item name="android:textColor">@color/sare_amber_700</item>
+    </style>
+
+    <style name="TextAppearance.Sare.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/eczar_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Sare.SubTitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textColor">@color/sare_amber_700</item>
+    </style>
+
+    <style name="TextAppearance.Sare.SubTitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textColor">@color/sare_amber_700</item>
+    </style>
+
+    <style name="TextAppearance.Sare.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+
+    <style name="TextAppearance.Sare.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+
+    <style name="TextAppearance.Sare.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textSize">@dimen/button_text</item>
+    </style>
+
+    <style name="TextAppearance.Sare.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+
+</resources>
