@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#052238</color>
-    <color name="colorPrimaryDark">#000013</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="colorAccentVariant">#FF03DAC5</color>
-    <color name="primaryColor">#6002ee</color>
-    <color name="primaryLightColor">#474847</color>
-    <color name="primaryDarkColor">#202120</color>
-    <color name="primaryTextColor">#FF000000</color>
-    <color name="colorBackground">#ffffff</color>
+
+    <color name ="sare_amber_700">#ffa000</color>
+    <color name ="sare_amber_500">#ffc107</color>
+
+    <color name ="sare_light_blue_400">#29b6f6</color>
+    <color name ="sare_light_blue_800">#0277bd</color>
+
+    <color name ="sare_blue_grey_900">#052238</color>
+
+    <color name ="sare_white_50">#ffffff</color>
+
+    <color name ="sare_teal_300">#4db6ac</color>
+
+    <color name ="sare_black_50">#000a12</color>
+
 </resources>

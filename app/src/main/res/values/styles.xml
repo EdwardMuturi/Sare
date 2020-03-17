@@ -1,27 +1,6 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="SareTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
-        <item name="colorSecondary">@color/colorAccent</item>
-        <item name="colorSecondaryVariant">@color/colorAccentVariant</item>
 
-        <item name="android:colorBackground">@color/colorBackground</item>
-        <item name="colorOnPrimary">@color/primaryTextColor</item>
-
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sare.SmallComponent</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Sare.MediumComponent</item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Sare.LargeComponent</item>
-
-        <!--        Typography-->
-        <item name="textAppearanceHeadline5">@style/TextAppearance.Sare.Title</item>
-        <item name="textAppearanceHeadline4">@style/TextAppearance.Sare.SubTitle</item>
-        <item name="textAppearanceBody1">@style/TextAppearance.Sare.Body1</item>
-        <item name="textAppearanceBody2">@style/TextAppearance.Sare.Body2</item>
-        <item name="textAppearanceButton">@style/TextAppearance.Sare.Button</item>
-
-    </style>
 
 </resources>

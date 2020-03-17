@@ -6,13 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:weightSum="3"
-    android:gravity="center_vertical"
-    tools:context=".ui.SummaryFragment">
+    android:gravity="top"
+    android:layout_marginTop="50dp"
+    tools:context=".ui.summary.SummaryFragment">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="@dimen/card_summary_width"
-        android:layout_height="@dimen/card_summary_height"
+        android:layout_width="@dimen/card_summary_width_small"
+        android:layout_height="@dimen/card_summary_height_small"
         android:layout_marginEnd="10dp"
+        android:layout_weight=".7"
         android:layout_marginStart="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -40,7 +42,7 @@
                 app:layout_constraintTop_toBottomOf="@id/mtv_summary_daily_label"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textAppearance="?attr/textAppearanceHeadline5"
                 tools:text="Kes 3,000"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -48,9 +50,10 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="@dimen/card_summary_width"
-        android:layout_height="@dimen/card_summary_height"
-        android:layout_marginEnd="10dp">
+        android:layout_width="@dimen/card_summary_width_medium"
+        android:layout_height="@dimen/card_summary_height_medium"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1.6">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -66,18 +69,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/sare_light_blue_400"
                 tools:text="@string/text_weekly"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/dimen_0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/mtv_weekly_daily"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
                 app:layout_constraintTop_toBottomOf="@id/mtv_summary_weekly_label"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline5"
                 android:text="@string/sample_amount"
-                android:textAppearance="?attr/textAppearanceHeadline4"
                 tools:text="@string/sample_amount"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -85,8 +89,10 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="@dimen/card_summary_width"
-        android:layout_height="@dimen/card_summary_height">
+        android:layout_width="@dimen/card_summary_width_small"
+        android:layout_height="@dimen/card_summary_height_small"
+        android:layout_weight=".7"
+        android:layout_marginEnd="@dimen/dimen_10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -96,7 +102,7 @@
                 android:layout_width="@dimen/dimen_0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/mtv_summary_monthly_label"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
                 android:text="@string/text_monthly"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -108,12 +114,12 @@
                 android:layout_width="@dimen/dimen_0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/mtv_summary_monthly"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
                 android:text="@string/sample_amount"
+                android:textAppearance="?attr/textAppearanceHeadline5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/mtv_summary_monthly_label"
                 app:layout_constraintStart_toStartOf="parent"
-                android:textAppearance="?attr/textAppearanceHeadline4"
                 tools:text="Kes 3,000"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

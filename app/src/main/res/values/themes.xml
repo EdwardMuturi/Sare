@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Sare" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- previously in @styles file -->
+
+<!--        Color-->
+        <item name="colorPrimary">@color/sare_blue_grey_900</item>
+        <item name="colorPrimaryVariant">@color/sare_black_50</item>
+        <item name="colorSecondary">@color/sare_amber_500</item>
+        <item name="colorSecondaryVariant">@color/sare_amber_700</item>
+
+        <item name="colorSurface">@color/sare_blue_grey_900</item>
+
+        <item name="colorOnPrimary">@color/sare_white_50</item>
+        <item name="colorOnBackground">@color/sare_white_50</item>
+        <item name="colorOnSurface">@color/sare_light_blue_800</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sare.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Sare.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Sare.LargeComponent</item>
+
+        <!--        Typography-->
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Sare.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Sare.Headline4</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Sare.SubTitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Sare.SubTitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Sare.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Sare.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Sare.Button</item>
+        <!--        styles-->
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+
+    </style>
+</resources>
