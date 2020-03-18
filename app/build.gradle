@@ -48,6 +48,8 @@ dependencies {
     //    navigation component
     implementation Deps.nav_fragment
     implementation Deps.nav_UI
+//    MpAndroidChart
+    implementation Deps.mp_chart
 //    Testing
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation Deps.junit
