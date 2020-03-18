@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.expenses.ExpensesFragment"
-    android:background="@color/cardview_dark_background">
+    tools:context=".ui.expenses.ExpensesFragment">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
