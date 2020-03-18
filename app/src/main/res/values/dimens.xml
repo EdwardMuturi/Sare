@@ -8,7 +8,7 @@
     <dimen name="button_text">14sp</dimen>
     <dimen name="caption">12sp</dimen>
     <dimen name="sare_small_component_corner_radius">24dp</dimen>
-    <dimen name="sare_medium_component_corner_radius">8dp</dimen>
+    <dimen name="sare_medium_component_corner_radius">0dp</dimen>
     <dimen name="sare_large_component_corner_radius">12dp</dimen>
     <dimen name="dimen_0dp">0dp</dimen>
     <dimen name="card_summary_height_small">125dp</dimen>

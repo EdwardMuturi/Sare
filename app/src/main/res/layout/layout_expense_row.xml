@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dimen_8dp"
     android:layout_marginStart="@dimen/dimen_16dp"
-    android:layout_marginEnd="@dimen/dimen_16dp"
-    android:layout_marginTop="@dimen/dimen_16dp">
+    android:layout_marginEnd="@dimen/dimen_16dp">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="@dimen/dimen_0dp"
@@ -26,6 +27,7 @@
         app:layout_constraintEnd_toStartOf="@id/mtv_expense_amount"
         app:layout_constraintTop_toBottomOf="@id/mtv_expense_name"
         android:layout_marginTop="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_8dp"
         tools:text="Jun-14-2020"/>
 
     <com.google.android.material.textview.MaterialTextView
@@ -38,6 +40,5 @@
         app:layout_constraintTop_toBottomOf="@id/mtv_expense_name"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:text="@string/sample_amount"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
