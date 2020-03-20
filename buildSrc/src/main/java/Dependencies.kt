@@ -45,7 +45,6 @@ object Versions {
     val dagger_version= "2.25.2"
     val timber_version= "4.7.1"
     val lottie_version= "3.2.0"
-    val android_mp_chart = "v3.1.0"
 }
 
 object Deps {
@@ -113,7 +112,5 @@ object Deps {
     const val nav_UI= "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
     const val nav_fragment= "androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
     const val safe_args_gradle_plugin= "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
-//    android mp charts
-    val mp_chart = "com.github.PhilJay:MPAndroidChart:${Versions.android_mp_chart}"
 
 }
