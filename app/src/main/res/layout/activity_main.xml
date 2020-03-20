@@ -51,7 +51,6 @@
                 android:id="@+id/bottom_app_bar_logo"
                 android:layout_width="@dimen/bottom_app_bar_logo_size"
                 android:layout_height="@dimen/bottom_app_bar_logo_size"
-                android:layout_marginStart="@dimen/dimen_16dp"
                 android:contentDescription="@string/bottom_app_bar_logo_content_desc"
                 android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/ic_expand_less_black_24dp" />
