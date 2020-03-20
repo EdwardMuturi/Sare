@@ -54,7 +54,7 @@
                 android:layout_marginStart="@dimen/dimen_16dp"
                 android:contentDescription="@string/bottom_app_bar_logo_content_desc"
                 android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/ic_view_list_black_24dp" />
+                app:srcCompat="@drawable/ic_expand_less_black_24dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/bottom_app_bar_expenses_title"
