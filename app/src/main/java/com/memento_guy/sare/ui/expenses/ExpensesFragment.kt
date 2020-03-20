@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.recyclerview.widget.DividerItemDecoration
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -58,6 +59,7 @@ class ExpensesFragment : BottomSheetDialogFragment() {
 
         val expenseAdapter = ExpenseAdapter()
         view.rv_expenses.adapter= expenseAdapter
+        view.rv_expenses.addItemDecoration(DividerItemDecoration(view.context, DividerItemDecoration.VERTICAL))
         expenseAdapter.submitList(expenseList)
     }
 

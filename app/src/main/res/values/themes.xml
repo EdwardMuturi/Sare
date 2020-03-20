@@ -28,7 +28,7 @@
         <item name="textAppearanceBody2">@style/TextAppearance.Sare.Body2</item>
         <item name="textAppearanceButton">@style/TextAppearance.Sare.Button</item>
         <!--        styles-->
-        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+        <item name="bottomSheetStyle">@style/Theme.MaterialComponents.BottomSheetDialog</item>
 
     </style>
 </resources>
