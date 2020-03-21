@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name ="sare_amber_700">#ffa000</color>
+    <color name ="sare_amber_700">#ffc107</color>
+    <color name ="sare_amber_900">#ffa000</color>
     <color name ="sare_amber_500">#ffc107</color>
 
     <color name ="sare_light_blue_400">#29b6f6</color>

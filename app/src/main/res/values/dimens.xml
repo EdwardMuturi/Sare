@@ -22,5 +22,6 @@
     <dimen name="bottom_app_bar_logo_size">32dp</dimen>
     <dimen name="min_touch_target_size">48dp</dimen>
     <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="subtitle1_text_size">16dp</dimen>
     <dimen name="dimen_10dp">10dp</dimen>
 </resources>

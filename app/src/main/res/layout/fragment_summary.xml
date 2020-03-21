@@ -31,18 +31,19 @@
             android:gravity="center_horizontal"
             android:paddingTop="@dimen/dimen_16dp"
             app:layout_constraintEnd_toEndOf="parent"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             tools:text="@string/text_daily"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="@dimen/dimen_0dp"
             android:layout_height="wrap_content"
             android:id="@+id/mtv_summary_daily"
-            android:layout_marginTop="16dp"
             android:text="@string/sample_amount"
             app:layout_constraintTop_toBottomOf="@id/mtv_summary_daily_label"
             app:layout_constraintStart_toStartOf="parent"
             android:gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            android:textAppearance="@style/TextAppearance.Sare.SubTitle1"
             tools:text="Kes 3,000"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -64,20 +65,22 @@
             android:gravity="center_horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/sare_light_blue_400"
             android:paddingTop="30dp"
             tools:text="@string/text_weekly"/>
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtv_weekly_daily"
             android:layout_width="@dimen/dimen_0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/mtv_weekly_daily"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            app:layout_constraintTop_toBottomOf="@id/mtv_summary_weekly_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center_horizontal"
             android:text="@string/sample_amount"
-            tools:text="@string/sample_amount"/>
+            android:textAppearance="@style/TextAppearance.Sare.SubTitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtv_summary_weekly_label"
+            tools:text="@string/sample_amount" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -99,6 +102,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:gravity="center_horizontal"
             android:paddingTop="@dimen/dimen_16dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="@string/text_monthly"/>
 
@@ -106,7 +110,7 @@
             android:layout_width="@dimen/dimen_0dp"
             android:layout_height="wrap_content"
             android:id="@+id/mtv_summary_monthly"
-            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textAppearance="@style/TextAppearance.Sare.SubTitle1"
             android:text="@string/sample_amount"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center_horizontal"
