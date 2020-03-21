@@ -29,6 +29,7 @@ class ExpensesFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         val expenseList = ArrayList<Expense>()
 
+        //dummy data
         val expense1= Expense("ArtCafe Coffee","13-Mar-2020",250)
         expenseList.add(expense1)
         val expense2= Expense("Phone Bill","14-Apr-2020",2000)

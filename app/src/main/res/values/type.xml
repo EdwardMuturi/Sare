@@ -25,11 +25,12 @@
 
     <style name="TextAppearance.Sare.SubTitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:fontFamily">@font/roboto_condensed_regular</item>
-        <item name="android:textColor">@color/sare_amber_900</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
     </style>
 
     <style name="TextAppearance.Sare.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
     </style>
 
     <style name="TextAppearance.Sare.Body2" parent="TextAppearance.MaterialComponents.Body2">

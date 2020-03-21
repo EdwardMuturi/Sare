@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:weightSum="3"
     android:gravity="top"
     android:layout_marginTop="70dp"
     tools:context=".ui.summary.SummaryFragment">
@@ -14,7 +13,6 @@
         android:layout_width="@dimen/card_summary_width_small"
         android:layout_height="@dimen/card_summary_height_small"
         android:layout_marginEnd="10dp"
-        android:layout_weight=".7"
         android:orientation="vertical"
         android:background="@drawable/chart_circle"
         android:id="@+id/chart_daily"
@@ -43,7 +41,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            android:textAppearance="@style/TextAppearance.Sare.SubTitle1"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="Kes 3,000"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -52,8 +50,8 @@
         android:layout_height="@dimen/card_summary_height_medium"
         android:layout_marginEnd="10dp"
         android:id="@+id/chart_weekly"
-        android:background="@drawable/chart_circle"
-        android:layout_weight="1.6">
+        android:elevation="40dp"
+        android:background="@drawable/chart_circle">
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="@dimen/dimen_0dp"
@@ -87,7 +85,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="@dimen/card_summary_width_small"
         android:layout_height="@dimen/card_summary_height_small"
-        android:layout_weight=".7"
         android:background="@drawable/chart_circle"
         android:id="@+id/chart_monthly"
         android:layout_marginEnd="@dimen/dimen_10dp">
@@ -110,7 +107,7 @@
             android:layout_width="@dimen/dimen_0dp"
             android:layout_height="wrap_content"
             android:id="@+id/mtv_summary_monthly"
-            android:textAppearance="@style/TextAppearance.Sare.SubTitle1"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
             android:text="@string/sample_amount"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center_horizontal"
