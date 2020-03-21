@@ -24,7 +24,7 @@ class SummaryFragment : Fragment() {
 
         val chartDrawable = view.chart_weekly.background as GradientDrawable
 
-        chartDrawable.setStroke(18, resources.getColor(R.color.sare_light_blue_400))
+        chartDrawable.setStroke(15, resources.getColor(R.color.sare_light_blue_400))
         view.chart_weekly.invalidate()
 
         return view

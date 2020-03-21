@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/bottom_app_bar_content_container"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:foreground="@drawable/expense_filter_title_foreground">
 
             <ImageView
                 android:id="@+id/bottom_app_bar_logo"
