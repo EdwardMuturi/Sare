@@ -31,4 +31,9 @@
         <item name="bottomSheetStyle">@style/Theme.MaterialComponents.BottomSheetDialog</item>
 
     </style>
+    
+    <style name="ThemeOverlay.Sare.Teal" parent="">
+        <item name="android:textSize">@color/sare_teal_300</item>
+    </style>
+
 </resources>
