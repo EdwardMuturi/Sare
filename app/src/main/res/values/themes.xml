@@ -32,8 +32,8 @@
 
     </style>
     
-    <style name="ThemeOverlay.Sare.Teal" parent="">
-        <item name="android:textSize">@color/sare_teal_300</item>
+    <style name="ThemeOverlay.Sare.Teal" parent="@style/TextAppearance.Sare.Headline5">
+        <item name="android:textColor">@color/sare_teal_300</item>
     </style>
 
 </resources>

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?attr/textAppearanceHeadline5"
-        android:theme="@style/ThemeOverlay.Sare.Teal"
+        android:textColor="@color/sare_teal_300"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/text_add_expense" />
 
