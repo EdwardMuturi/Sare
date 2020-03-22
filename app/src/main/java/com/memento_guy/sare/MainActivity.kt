@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         configBottomAppBar()
 
-        BottomSheetBehavior.from(bottom_container).peekHeight = 1300
+        BottomSheetBehavior.from(bottom_container).state = BottomSheetBehavior.STATE_HALF_EXPANDED
         supportFragmentManager.beginTransaction().replace(
             R.id.bottom_container, ExpensesFragment()
         ).commit()

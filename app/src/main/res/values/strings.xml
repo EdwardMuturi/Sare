@@ -4,6 +4,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_daily">Daily</string>
+    <string name="text_daily_expenses">Daily Expenses</string>
     <string name="sample_amount">Kes 2,000</string>
     <string name="text_weekly">Weekly</string>
     <string name="text_monthly">Monthly</string>
