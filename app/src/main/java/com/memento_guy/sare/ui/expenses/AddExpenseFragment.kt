@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.memento_guy.sare.R
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,7 +26,6 @@ class AddExpenseFragment : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         activity?.fab_add_expense?.setImageResource(R.drawable.ic_done_black_24dp)
 

@@ -27,13 +27,20 @@
         <item name="textAppearanceBody1">@style/TextAppearance.Sare.Body1</item>
         <item name="textAppearanceBody2">@style/TextAppearance.Sare.Body2</item>
         <item name="textAppearanceButton">@style/TextAppearance.Sare.Button</item>
+
         <!--        styles-->
+        <item name="textInputStyle">@style/Widget.Sare.TextInputLayout.OutlinedBox</item>
         <item name="bottomSheetStyle">@style/Theme.MaterialComponents.BottomSheetDialog</item>
 
     </style>
     
     <style name="ThemeOverlay.Sare.Teal" parent="@style/TextAppearance.Sare.Headline5">
         <item name="android:textColor">@color/sare_teal_300</item>
+    </style>
+
+    <style name="ThemeOverlay.Sare.TextInputLayout" parent="">
+        <item name="colorOnSurface">@color/sare_white_50</item>
+<!--        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText</item>-->
     </style>
 
 </resources>
