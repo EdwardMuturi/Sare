@@ -40,7 +40,7 @@
 
     <style name="ThemeOverlay.Sare.TextInputLayout" parent="">
         <item name="colorOnSurface">@color/sare_white_50</item>
-<!--        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText</item>-->
+        <item name="editTextStyle">@style/Widget.Sare.TextInputEditText.OutlinedBox</item>
     </style>
 
 </resources>

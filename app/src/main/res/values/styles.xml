@@ -6,4 +6,10 @@
        <item name="materialThemeOverlay">@style/ThemeOverlay.Sare.TextInputLayout</item>
     </style>
 
+
+    <style name="Widget.Sare.TextInputEditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
 </resources>
