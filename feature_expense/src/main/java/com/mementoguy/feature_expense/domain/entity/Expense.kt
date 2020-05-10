@@ -1,5 +1,7 @@
 package com.mementoguy.feature_expense.domain.entity
 
+import com.mementoguy.feature_expense.domain.enum.ExpenseCategory
+
 
 data class Expense(
     val category: String,
