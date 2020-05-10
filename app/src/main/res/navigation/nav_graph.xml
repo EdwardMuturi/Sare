@@ -18,5 +18,14 @@
             android:id="@+id/expensesFragment"
             android:name="com.memento_guy.sare.ui.expenses.ExpensesFragment"
             android:label="fragment_expenses"
-            tools:layout="@layout/fragment_expenses" />
+            tools:layout="@layout/fragment_expenses" >
+        <action
+            android:id="@+id/action_expensesFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addExpenseFragment"
+        android:name="com.memento_guy.sare.ui.expenses.AddExpenseFragment"
+        android:label="fragment_add_expense"
+        tools:layout="@layout/fragment_add_expense" />
 </navigation>

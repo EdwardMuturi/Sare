@@ -11,4 +11,9 @@
     <string name="navigation_expenses">Expenses</string>
     <string name="bottom_app_bar_logo_content_desc">View or add expenses</string>
     <string name="text_settings">Settings</string>
+    <string name="text_add_expense">Add Expense</string>
+    <string name="text_amount">amount</string>
+    <string name="sample_text_internet">Internet</string>
+    <string name="text_utility_name">Savings</string>
+    <string name="text_expense_date">Expense Date</string>
 </resources>
