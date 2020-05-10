@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="Sare.app" target="1.8" />
       <module name="Sare.buildSrc" target="1.8" />
+      <module name="Sare.feature_budget" target="1.8" />
+      <module name="Sare.feature_expense" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
