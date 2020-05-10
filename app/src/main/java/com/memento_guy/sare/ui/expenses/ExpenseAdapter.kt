@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.memento_guy.sare.R
 import com.memento_guy.sare.data.Expense
 import kotlinx.android.synthetic.main.layout_expense_row.view.*
+import java.text.NumberFormat
+import java.util.*
 
 /**
  *Created by Edward Muturi on 16/03/2020
@@ -34,7 +36,8 @@ class ExpenseAdapter (): androidx.recyclerview.widget.ListAdapter<Expense, Expen
         fun bind(expense: Expense){
             itemView.mtv_expense_name.text = expense.name
             itemView.mtv_expense_date.text = expense.date
-            itemView.mtv_expense_amount.text = "KES   ${expense.amount}"
+            val amountString = NumberFormat.getIntegerInstance(Locale.getDefault()).format(expense.amount)
+            itemView.mtv_expense_amount.text = "KES   $amountString"
         }
 
     }

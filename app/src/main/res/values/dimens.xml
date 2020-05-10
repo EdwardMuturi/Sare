@@ -7,14 +7,14 @@
     <dimen name="sub_body_text">14sp</dimen>
     <dimen name="button_text">14sp</dimen>
     <dimen name="caption">12sp</dimen>
-    <dimen name="sare_small_component_corner_radius">24dp</dimen>
+    <dimen name="sare_small_component_corner_radius">8dp</dimen>
     <dimen name="sare_medium_component_corner_radius">0dp</dimen>
     <dimen name="sare_large_component_corner_radius">12dp</dimen>
     <dimen name="dimen_0dp">0dp</dimen>
     <dimen name="card_summary_height_small">125dp</dimen>
-    <dimen name="card_summary_width_small">115dp</dimen>
-    <dimen name="card_summary_width_medium">125dp</dimen>
-    <dimen name="card_summary_height_medium">155dp</dimen>
+    <dimen name="card_summary_width_small">125dp</dimen>
+    <dimen name="card_summary_width_medium">155dp</dimen>
+    <dimen name="card_summary_height_medium">150dp</dimen>
     <dimen name="bottom_sheet_peek_height">80dp</dimen>
     <dimen name="bottom_app_bar_fab_cradle_corner_radius">32dp</dimen>
     <dimen name="bottom_app_bar_fab_cradle_margin">8dp</dimen>
@@ -22,5 +22,6 @@
     <dimen name="bottom_app_bar_logo_size">32dp</dimen>
     <dimen name="min_touch_target_size">48dp</dimen>
     <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="subtitle1_text_size">16dp</dimen>
     <dimen name="dimen_10dp">10dp</dimen>
 </resources>

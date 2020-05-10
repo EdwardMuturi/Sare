@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="70dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginTop="@dimen/dimen_8dp"
@@ -14,9 +14,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content"
         android:id="@+id/mtv_expense_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/mtv_expense_amount"
+        app:layout_constraintEnd_toStartOf="@id/guide_expense_row"
         app:layout_constraintTop_toTopOf="parent"
-        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
         tools:text="Art Cafe" />
 
     <com.google.android.material.textview.MaterialTextView
@@ -24,7 +25,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content"
         android:id="@+id/mtv_expense_date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/mtv_expense_amount"
+        app:layout_constraintEnd_toStartOf="@id/guide_expense_row"
         app:layout_constraintTop_toBottomOf="@id/mtv_expense_name"
         android:layout_marginTop="@dimen/dimen_8dp"
         android:paddingBottom="@dimen/dimen_8dp"
@@ -35,10 +36,17 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content"
         android:id="@+id/mtv_expense_amount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/mtv_expense_name"
+        app:layout_constraintStart_toEndOf="@id/guide_expense_row"
         app:layout_constraintBottom_toBottomOf="@id/mtv_expense_name"
         app:layout_constraintTop_toBottomOf="@id/mtv_expense_name"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:text="@string/sample_amount"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".73"
+        android:id="@+id/guide_expense_row"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

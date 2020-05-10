@@ -1,23 +1,18 @@
 package com.memento_guy.sare.ui.expenses
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.DividerItemDecoration
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-
 import com.memento_guy.sare.R
 import com.memento_guy.sare.data.Expense
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.activity_main.view.fab_add_expense
 import kotlinx.android.synthetic.main.fragment_expenses.view.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class ExpensesFragment : BottomSheetDialogFragment() {
 
     override fun onCreateView(
@@ -32,6 +27,7 @@ class ExpensesFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         val expenseList = ArrayList<Expense>()
 
+        //dummy data
         val expense1= Expense("ArtCafe Coffee","13-Mar-2020",250)
         expenseList.add(expense1)
         val expense2= Expense("Phone Bill","14-Apr-2020",2000)
@@ -61,6 +57,13 @@ class ExpensesFragment : BottomSheetDialogFragment() {
         view.rv_expenses.adapter= expenseAdapter
         view.rv_expenses.addItemDecoration(DividerItemDecoration(view.context, DividerItemDecoration.VERTICAL))
         expenseAdapter.submitList(expenseList)
+
+        requireActivity().fab_add_expense.setOnClickListener {
+            activity?.supportFragmentManager?.beginTransaction()?.replace(
+                    R.id.bottom_container, AddExpenseFragment()
+                )
+                ?.commit()
+        }
     }
 
 }

@@ -6,9 +6,9 @@ import java.util.*
 /**
  *Created by Edward Muturi on 16/03/2020
  **/
-data class Expense (
-    val name : String,
-    val date : String,
+data class Expense(
+    val name: String,
+    val date: String,
     val amount: Int
 ){
     constructor() : this(

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".ui.expenses.ExpensesFragment">
-
+    <!--addition of overlay theme causes crash in android M-->
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_summary_daily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mtv_summary_daily"
-        android:text="@string/text_daily"
-        android:layout_marginTop="@dimen/dimen_8dp"
         android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/text_daily_expenses"
         android:textAppearance="?attr/textAppearanceHeadline5"
         android:textColor="@color/sare_teal_300"
-        tools:text="@string/text_daily"/>
+        tools:text="@string/text_daily" />
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_expenses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rv_expenses"
         android:clipToPadding="false"
-        android:layout_marginTop="30dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/layout_expense_row"/>
+        tools:listitem="@layout/layout_expense_row" />
 
-</FrameLayout>
+</LinearLayout>
