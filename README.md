@@ -15,3 +15,6 @@ Sare (**Sa**vings **Re**Porter) is a **work-in-progress** personal finance andro
 * Material Design tools and components
 * Jetpack Components
    * Navigation Component
+
+## Reference Guides
+* [Clean Architecture](https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a)
