@@ -5,7 +5,7 @@ import java.lang.Exception
 
 sealed class Result<out T : Any>{
     data class Success<out T : Any>(val data : T) : Result<T>()
-    data class Error<out T : Any>(val exception: Exception) : Result<Nothing>()
+    data class Error<out T : Any>(val exceptionString: String) : Result<Nothing>()
 }
 
 internal interface ExpenseRepository {

@@ -14,5 +14,5 @@
 .externalNativeBuild
 .cxx
 
-buildSrc/build
+/buildSrc/build
 /screenshots/basic01.png

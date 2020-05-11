@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -46,6 +47,10 @@ dependencies {
     //    navigation component
     implementation Deps.nav_fragment
     implementation Deps.nav_UI
+
+//    firebase
+    implementation Deps.firestore_ktx
+    implementation Deps.coroutines_play_services
 //    Testing
     testImplementation Deps.junit
     androidTestImplementation Deps.junit_ext

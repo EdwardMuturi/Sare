@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "42356065315",
+    "firebase_url": "https://sare-cfed9.firebaseio.com",
+    "project_id": "sare-cfed9",
+    "storage_bucket": "sare-cfed9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42356065315:android:560dde72f341337adb5d96",
+        "android_client_info": {
+          "package_name": "com.memento_guy.sare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42356065315-buto75cug5ea7pia09jiihgb8pkesukj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDte5uIeJKYcam5I48tdBm3Zu1vwMiIJ4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42356065315-buto75cug5ea7pia09jiihgb8pkesukj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
